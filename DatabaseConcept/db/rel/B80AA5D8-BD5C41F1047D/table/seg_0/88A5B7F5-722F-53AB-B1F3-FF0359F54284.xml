@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="88A5B7F5-722F-53AB-B1F3-FF0359F54284" name="Product">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 17:26:06 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="6E484932-60FF-BEC5-67D0-2591BF2FDDCD">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 17:27:03 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="55CC5B21-A73A-4569-1104-EC4C7C9EB4E8">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 17:27:30 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sku" id="C3DBDD95-0324-326A-BB6B-36D4F5E500C8">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 17:28:24 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="category" id="9187A2A6-B276-CBC8-2311-9D29D7C81213">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 17:28:59 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="net_price" id="385CCC14-4EAC-CFF9-C24C-89D75575B031">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 17:31:11 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vat" id="639B99E1-1BF6-AD29-DA56-6F4A2049EBF0">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 17:31:43 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="stock" id="1BC90C79-079A-69AE-24C5-80AB6D42D1DA">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 17:32:10 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Vendor_id" id="9A18434E-8ADA-56CD-3DB0-787C6FC58EA1">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 17:47:03 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1BD87F12-6560-4368-46CE-FEFAFBA31A8C" referredColumn="D23D6BC5-5BC4-54E1-B47B-F08AC0CECD84"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="29A1313E-6B82-DA0E-FD13-FCC991192F10" name="Product_PK">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 17:27:03 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E484932-60FF-BEC5-67D0-2591BF2FDDCD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C69C1A34-910B-C10F-D385-6E069799A589" name="Product_Vendor_FK">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 17:47:03 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A18434E-8ADA-56CD-3DB0-787C6FC58EA1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

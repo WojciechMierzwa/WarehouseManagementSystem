@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="25DEA0A3-77A2-9DE7-DDD4-8364FFF4C6E6" name="Employee">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 17:53:43 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="CDBF47E9-CCF3-2FB5-36EF-9C8894F9B655">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 17:54:04 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="B26D1749-812D-1133-8BB1-C3DCAE1F696D">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 17:54:18 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="surname" id="BB19C084-068B-25A7-93C0-EA5DA2ADD2FA">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 17:54:30 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pesel" id="38DD5C39-D818-A44C-F518-C0F5D06635E0">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 17:55:17 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone_number" id="8483CB71-06C0-67E5-D5A2-56EDB28A3DE2">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 17:55:28 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0D19E8D3-3692-3850-4541-53F46B4770D7" name="Employee_PK">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 17:54:04 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CDBF47E9-CCF3-2FB5-36EF-9C8894F9B655"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="604B3493-DDCB-225A-52CC-9B5BF5D18A3C" name="Product_list">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 17:45:42 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="9BD26FF5-31DB-1BD2-4CA7-397C28014DC6">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 18:07:14 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Product_id" id="236A8BC9-7079-E38B-EB85-69D5C04DF47D">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 17:46:25 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="39A9FD19-6CDE-C1ED-83EB-FF7DFBA68A01" referredColumn="6E484932-60FF-BEC5-67D0-2591BF2FDDCD"/>
+</associations>
+</Column>
+<Column name="Order_id" id="A93CCBDC-6D07-B963-BEB7-E31F98D015AF">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 17:46:31 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB8F9738-DB2E-6D52-891A-9F492BE00595" referredColumn="B6CDE21C-1EB6-789A-03F8-AE91E3B68848"/>
+</associations>
+</Column>
+<Column name="quantity" id="13CA2310-7961-A9B8-BB83-2EEDC46D2F46">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 18:03:07 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="unit_price" id="3911C934-D8E0-D48B-948B-C763B8C37B21">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 18:03:30 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total_price" id="13352795-6968-FF67-EB35-71D4BB85AD48">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 18:04:00 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0FDEE0F4-7381-6268-7146-4EECCE813AED" name="Product_list_PK">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 18:07:14 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BD26FF5-31DB-1BD2-4CA7-397C28014DC6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E0786BCF-490B-8BA3-1155-2DDCE83565D1" name="Product_list_Product_FK">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 17:46:25 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="236A8BC9-7079-E38B-EB85-69D5C04DF47D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="85F393AC-0A7A-672A-B542-955812708A79" name="Product_list_Order_FK">
+<createdBy>wojci</createdBy>
+<createdTime>2024-10-30 17:46:31 UTC</createdTime>
+<ownerDesignName>db</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A93CCBDC-6D07-B963-BEB7-E31F98D015AF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
