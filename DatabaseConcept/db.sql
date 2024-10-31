@@ -29,11 +29,15 @@ CREATE TABLE Employee
     id INT NOT NULL IDENTITY(1,1),  -- Automatically incrementing ID
     name VARCHAR(50) NOT NULL, 
     surname VARCHAR(50) NOT NULL, 
-    pesel BIGINT NOT NULL,  -- Changed to BIGINT for larger values
+    pesel VARCHAR(20) NOT NULL, 
     phone_number VARCHAR(15) NOT NULL,
+    login VARCHAR(30) NOT NULL,  -- Login field
+    password VARCHAR(30) NOT NULL,  -- Password field
+    account_type CHAR(1) NOT NULL CHECK (account_type IN ('a', 'm', 'e')),  -- Account type (admin, manager, employee)
     CONSTRAINT PK_Employee PRIMARY KEY CLUSTERED (id)
 );
 GO
+
 
 CREATE TABLE Invoice 
 (

@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\wojci\\source\\repos\\ConsoleInventoryManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|c:\\users\\wojci\\source\\repos\\consoleinventorymanager\\consoleinventorymanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|solutionrelative:consoleinventorymanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|c:\\users\\wojci\\source\\repos\\consoleinventorymanager\\consoleinventorymanager\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|solutionrelative:consoleinventorymanager\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|c:\\users\\wojci\\source\\repos\\consoleinventorymanager\\consoleinventorymanager\\vendor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|solutionrelative:consoleinventorymanager\\vendor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Vendor.cs",
+              "DocumentMoniker": "C:\\Users\\wojci\\source\\repos\\ConsoleInventoryManager\\ConsoleInventoryManager\\Vendor.cs",
+              "RelativeDocumentMoniker": "ConsoleInventoryManager\\Vendor.cs",
+              "ToolTip": "C:\\Users\\wojci\\source\\repos\\ConsoleInventoryManager\\ConsoleInventoryManager\\Vendor.cs*",
+              "RelativeToolTip": "ConsoleInventoryManager\\Vendor.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T05:41:23.109Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\wojci\\source\\repos\\ConsoleInventoryManager\\ConsoleInventoryManager\\Product.cs",
+              "RelativeDocumentMoniker": "ConsoleInventoryManager\\Product.cs",
+              "ToolTip": "C:\\Users\\wojci\\source\\repos\\ConsoleInventoryManager\\ConsoleInventoryManager\\Product.cs",
+              "RelativeToolTip": "ConsoleInventoryManager\\Product.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAiwBUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T05:47:09.723Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\wojci\\source\\repos\\ConsoleInventoryManager\\ConsoleInventoryManager\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleInventoryManager\\Program.cs",
+              "ToolTip": "C:\\Users\\wojci\\source\\repos\\ConsoleInventoryManager\\ConsoleInventoryManager\\Program.cs*",
+              "RelativeToolTip": "ConsoleInventoryManager\\Program.cs*",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowD0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-31T05:25:36.976Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
