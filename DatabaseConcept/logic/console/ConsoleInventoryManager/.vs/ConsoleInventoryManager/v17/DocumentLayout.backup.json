@@ -1,18 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\wojci\\source\\repos\\ConsoleInventoryManager\\",
+  "WorkspaceRootPath": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|c:\\users\\wojci\\source\\repos\\consoleinventorymanager\\consoleinventorymanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|e:\\semestr5\\projektzaliczeniowy.net\\projektzaliczeniowy-.net\\databaseconcept\\logic\\console\\consoleinventorymanager\\consoleinventorymanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|solutionrelative:consoleinventorymanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|c:\\users\\wojci\\source\\repos\\consoleinventorymanager\\consoleinventorymanager\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|solutionrelative:consoleinventorymanager\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|c:\\users\\wojci\\source\\repos\\consoleinventorymanager\\consoleinventorymanager\\vendor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|solutionrelative:consoleinventorymanager\\vendor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|e:\\semestr5\\projektzaliczeniowy.net\\projektzaliczeniowy-.net\\databaseconcept\\logic\\console\\consoleinventorymanager\\consoleinventorymanager\\consoleinventorymanager.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|solutionrelative:consoleinventorymanager\\consoleinventorymanager.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,48 +18,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Vendor.cs",
-              "DocumentMoniker": "C:\\Users\\wojci\\source\\repos\\ConsoleInventoryManager\\ConsoleInventoryManager\\Vendor.cs",
-              "RelativeDocumentMoniker": "ConsoleInventoryManager\\Vendor.cs",
-              "ToolTip": "C:\\Users\\wojci\\source\\repos\\ConsoleInventoryManager\\ConsoleInventoryManager\\Vendor.cs*",
-              "RelativeToolTip": "ConsoleInventoryManager\\Vendor.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\ConsoleInventoryManager\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleInventoryManager\\Program.cs",
+              "ToolTip": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\ConsoleInventoryManager\\Program.cs*",
+              "RelativeToolTip": "ConsoleInventoryManager\\Program.cs*",
+              "ViewState": "AgIAAPQAAAAAAAAAAAAowA8BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T05:41:23.109Z",
+              "WhenOpened": "2024-10-31T05:25:36.976Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\wojci\\source\\repos\\ConsoleInventoryManager\\ConsoleInventoryManager\\Product.cs",
-              "RelativeDocumentMoniker": "ConsoleInventoryManager\\Product.cs",
-              "ToolTip": "C:\\Users\\wojci\\source\\repos\\ConsoleInventoryManager\\ConsoleInventoryManager\\Product.cs",
-              "RelativeToolTip": "ConsoleInventoryManager\\Product.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAiwBUAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T05:47:09.723Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\wojci\\source\\repos\\ConsoleInventoryManager\\ConsoleInventoryManager\\Program.cs",
-              "RelativeDocumentMoniker": "ConsoleInventoryManager\\Program.cs",
-              "ToolTip": "C:\\Users\\wojci\\source\\repos\\ConsoleInventoryManager\\ConsoleInventoryManager\\Program.cs*",
-              "RelativeToolTip": "ConsoleInventoryManager\\Program.cs*",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAowD0AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T05:25:36.976Z",
-              "EditorCaption": ""
+              "Title": "ConsoleInventoryManager.csproj",
+              "DocumentMoniker": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\ConsoleInventoryManager\\ConsoleInventoryManager.csproj",
+              "RelativeDocumentMoniker": "ConsoleInventoryManager\\ConsoleInventoryManager.csproj",
+              "ToolTip": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\ConsoleInventoryManager\\ConsoleInventoryManager.csproj",
+              "RelativeToolTip": "ConsoleInventoryManager\\ConsoleInventoryManager.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-31T07:02:57.649Z"
             }
           ]
         }
