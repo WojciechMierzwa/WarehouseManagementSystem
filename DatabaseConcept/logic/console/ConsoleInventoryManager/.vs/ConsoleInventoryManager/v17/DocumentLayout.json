@@ -7,8 +7,20 @@
       "RelativeMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|solutionrelative:consoleinventorymanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|e:\\semestr5\\projektzaliczeniowy.net\\projektzaliczeniowy-.net\\databaseconcept\\logic\\console\\consoleinventorymanager\\consoleinventorymanager\\dblite.sql||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|solutionrelative:consoleinventorymanager\\dblite.sql||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|e:\\semestr5\\projektzaliczeniowy.net\\projektzaliczeniowy-.net\\databaseconcept\\logic\\console\\consoleinventorymanager\\consoleinventorymanager\\vendor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|solutionrelative:consoleinventorymanager\\vendor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|e:\\semestr5\\projektzaliczeniowy.net\\projektzaliczeniowy-.net\\databaseconcept\\logic\\console\\consoleinventorymanager\\consoleinventorymanager\\productlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|solutionrelative:consoleinventorymanager\\productlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|e:\\semestr5\\projektzaliczeniowy.net\\projektzaliczeniowy-.net\\databaseconcept\\logic\\console\\consoleinventorymanager\\consoleinventorymanager\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|solutionrelative:consoleinventorymanager\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|e:\\semestr5\\projektzaliczeniowy.net\\projektzaliczeniowy-.net\\databaseconcept\\logic\\console\\consoleinventorymanager\\consoleinventorymanager\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|e:\\semestr5\\projektzaliczeniowy.net\\projektzaliczeniowy-.net\\databaseconcept\\logic\\console\\consoleinventorymanager\\consoleinventorymanager\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|solutionrelative:consoleinventorymanager\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|e:\\semestr5\\projektzaliczeniowy.net\\projektzaliczeniowy-.net\\databaseconcept\\logic\\console\\consoleinventorymanager\\consoleinventorymanager\\vendor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59D1DFCD-223A-4AF7-BE62-FFB2F8B43F72}|ConsoleInventoryManager\\ConsoleInventoryManager.csproj|solutionrelative:consoleinventorymanager\\vendor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -52,7 +60,7 @@
               "RelativeDocumentMoniker": "ConsoleInventoryManager\\Program.cs",
               "ToolTip": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\ConsoleInventoryManager\\Program.cs",
               "RelativeToolTip": "ConsoleInventoryManager\\Program.cs",
-              "ViewState": "AgIAADUAAAAAlJmZmZkdwM8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEMBAAAAAAAAAAAAAEMBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-31T05:25:36.976Z",
               "IsPinned": true,
@@ -60,95 +68,111 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
+              "Title": "dblite.sql",
+              "DocumentMoniker": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\ConsoleInventoryManager\\dblite.sql",
+              "RelativeDocumentMoniker": "ConsoleInventoryManager\\dblite.sql",
+              "ToolTip": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\ConsoleInventoryManager\\dblite.sql",
+              "RelativeToolTip": "ConsoleInventoryManager\\dblite.sql",
+              "ViewState": "AgIAAFsAAAAAAAAAAADwv3YAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-11-03T01:08:57.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Vendor.cs",
               "DocumentMoniker": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\ConsoleInventoryManager\\Vendor.cs",
               "RelativeDocumentMoniker": "ConsoleInventoryManager\\Vendor.cs",
               "ToolTip": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\ConsoleInventoryManager\\Vendor.cs",
               "RelativeToolTip": "ConsoleInventoryManager\\Vendor.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA3wBsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA5wBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T16:23:32.349Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T01:08:53.444Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ProductList.cs",
               "DocumentMoniker": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\ConsoleInventoryManager\\ProductList.cs",
               "RelativeDocumentMoniker": "ConsoleInventoryManager\\ProductList.cs",
               "ToolTip": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\ConsoleInventoryManager\\ProductList.cs",
               "RelativeToolTip": "ConsoleInventoryManager\\ProductList.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAkwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T16:44:54.198Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T01:08:47.474Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "Product.cs",
+              "DocumentMoniker": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\ConsoleInventoryManager\\Product.cs",
+              "RelativeDocumentMoniker": "ConsoleInventoryManager\\Product.cs",
+              "ToolTip": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\ConsoleInventoryManager\\Product.cs",
+              "RelativeToolTip": "ConsoleInventoryManager\\Product.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAowCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-03T01:08:43.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Orders.cs",
               "DocumentMoniker": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\ConsoleInventoryManager\\Orders.cs",
               "RelativeDocumentMoniker": "ConsoleInventoryManager\\Orders.cs",
               "ToolTip": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\ConsoleInventoryManager\\Orders.cs",
               "RelativeToolTip": "ConsoleInventoryManager\\Orders.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAwBsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA5wBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T16:44:25.359Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T01:08:39.352Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Invoice.cs",
               "DocumentMoniker": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\ConsoleInventoryManager\\Invoice.cs",
               "RelativeDocumentMoniker": "ConsoleInventoryManager\\Invoice.cs",
               "ToolTip": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\ConsoleInventoryManager\\Invoice.cs",
               "RelativeToolTip": "ConsoleInventoryManager\\Invoice.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA5wBkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T16:44:00.715Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T01:08:34.905Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Employee.cs",
               "DocumentMoniker": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\ConsoleInventoryManager\\Employee.cs",
               "RelativeDocumentMoniker": "ConsoleInventoryManager\\Employee.cs",
               "ToolTip": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\ConsoleInventoryManager\\Employee.cs",
               "RelativeToolTip": "ConsoleInventoryManager\\Employee.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAwCMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAswCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T16:43:30.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T16:43:30.323Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Customer.cs",
               "DocumentMoniker": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\ConsoleInventoryManager\\Customer.cs",
               "RelativeDocumentMoniker": "ConsoleInventoryManager\\Customer.cs",
               "ToolTip": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\ConsoleInventoryManager\\Customer.cs",
               "RelativeToolTip": "ConsoleInventoryManager\\Customer.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA5wBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T16:43:27.559Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T16:43:27.559Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Address.cs",
               "DocumentMoniker": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\ConsoleInventoryManager\\Address.cs",
               "RelativeDocumentMoniker": "ConsoleInventoryManager\\Address.cs",
               "ToolTip": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic\\console\\ConsoleInventoryManager\\ConsoleInventoryManager\\Address.cs",
               "RelativeToolTip": "ConsoleInventoryManager\\Address.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAA5wCcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAADwvycAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-01T16:43:08.579Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-01T16:43:08.579Z"
             }
           ]
         }
