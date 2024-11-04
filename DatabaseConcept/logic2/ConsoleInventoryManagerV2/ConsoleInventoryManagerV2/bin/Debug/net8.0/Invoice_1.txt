@@ -5,10 +5,17 @@ Order ID: 1
 Customer Name: cus
 Email: 1
 Phone: 1
+Address Line 1: 1
+Address Line 2: 1
+Postal Code: 1
+City: 1
+Country: 1
 
 Products:
 ------------------------------------------------
-Product Name	Quantity	Unit Price	Total Price
-gwozdzie	12	1	13
+Product Name	Quantity	Unit Price	Total Price	VAT Rate
+gwozdzie	12	1	13	17
+drabina	2	1	1	23
+gwozdzie	20	13	260	17
 ------------------------------------------------
 End of Invoice

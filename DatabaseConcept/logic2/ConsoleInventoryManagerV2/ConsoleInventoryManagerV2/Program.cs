@@ -112,19 +112,31 @@ namespace ConsoleInventoryManagerV2
             }
         }
 
+
+
         private static void AddProductList(Controller controller)
         {
             Console.Write("Enter Product ID: ");
             int productId = int.Parse(Console.ReadLine());
+
             Console.Write("Enter Order ID: ");
             int orderId = int.Parse(Console.ReadLine());
+
             Console.Write("Enter Quantity: ");
             int quantity = int.Parse(Console.ReadLine());
-            Console.Write("Enter Unit Price: ");
-            double unitPrice = double.Parse(Console.ReadLine());
-            Console.Write("Enter Total Price: ");
-            double totalPrice = double.Parse(Console.ReadLine());
 
+            // Pobierz net_price z bazy danych na podstawie productId
+            double unitPrice = controller.GetProductNetPrice(productId);
+            if (unitPrice <= 0)
+            {
+                Console.WriteLine("Invalid Product ID or the product has no net price.");
+                return;
+            }
+
+            // Oblicz totalPrice
+            double totalPrice = unitPrice * quantity;
+
+            // Utwórz nowy wpis ProductList z pobranym unitPrice i obliczonym totalPrice
             ProductList productList = new ProductList(0, productId, orderId, quantity, unitPrice, totalPrice);
             controller.AddProductList(productList);
             Console.WriteLine($"\nProduct List entry added successfully!");

@@ -92,7 +92,7 @@ namespace ConsoleInventoryManagerV2
             }
         }
 
-    
+
         public List<Employee> GetAllEmployees()
         {
             var employees = new List<Employee>();
@@ -620,28 +620,34 @@ namespace ConsoleInventoryManagerV2
         {
             using (var connection = OpenConnection())
             {
-                // SQL query to retrieve order details and associated products
+                // SQL query to retrieve order details and associated products, including customer address and VAT
                 string sqlQuery = @"
-            SELECT 
-                o.id AS OrderID,
-                c.name AS CustomerName,
-                c.mail AS CustomerEmail,
-                c.phone_number AS CustomerPhone,
-                p.name AS ProductName,
-                pl.quantity AS ProductQuantity,
-                pl.unit_price AS UnitPrice,
-                pl.total_price AS TotalPrice
-            FROM 
-                [Order] o
-            JOIN 
-                Customer c ON o.Customer_id = c.id
-            JOIN 
-                Product_list pl ON o.id = pl.Order_id
-            JOIN 
-                Product p ON pl.Product_id = p.id
-            WHERE 
-                o.id = @Order_id;
-        ";
+    SELECT 
+        o.id AS OrderID,
+        c.name AS CustomerName,
+        c.mail AS CustomerEmail,
+        c.phone_number AS CustomerPhone,
+        c.address_row1,
+        c.address_row2,
+        c.postal_code,
+        c.city,
+        c.country,
+        p.name AS ProductName,
+        pl.quantity AS ProductQuantity,
+        pl.unit_price AS UnitPrice,
+        pl.total_price AS TotalPrice,
+        p.vat AS VatRate
+    FROM 
+        [Order] o
+    JOIN 
+        Customer c ON o.Customer_id = c.id
+    JOIN 
+        Product_list pl ON o.id = pl.Order_id
+    JOIN 
+        Product p ON pl.Product_id = p.id
+    WHERE 
+        o.id = @Order_id;
+";
 
                 using (var command = new SQLiteCommand(sqlQuery, connection))
                 {
@@ -666,17 +672,22 @@ namespace ConsoleInventoryManagerV2
                                 writer.WriteLine($"Customer Name: {reader["CustomerName"]}");
                                 writer.WriteLine($"Email: {reader["CustomerEmail"]}");
                                 writer.WriteLine($"Phone: {reader["CustomerPhone"]}");
+                                writer.WriteLine($"Address Line 1: {reader["address_row1"]}");
+                                writer.WriteLine($"Address Line 2: {reader["address_row2"]}");
+                                writer.WriteLine($"Postal Code: {reader["postal_code"]}");
+                                writer.WriteLine($"City: {reader["city"]}");
+                                writer.WriteLine($"Country: {reader["country"]}");
                                 writer.WriteLine();
 
                                 // Write table header for products
                                 writer.WriteLine("Products:");
                                 writer.WriteLine("------------------------------------------------");
-                                writer.WriteLine("Product Name\tQuantity\tUnit Price\tTotal Price");
+                                writer.WriteLine("Product Name\tQuantity\tUnit Price\tTotal Price\tVAT Rate");
 
-                                // Write product details
+                                // Write product details, including VAT
                                 do
                                 {
-                                    writer.WriteLine($"{reader["ProductName"]}\t{reader["ProductQuantity"]}\t{reader["UnitPrice"]}\t{reader["TotalPrice"]}");
+                                    writer.WriteLine($"{reader["ProductName"]}\t{reader["ProductQuantity"]}\t{reader["UnitPrice"]}\t{reader["TotalPrice"]}\t{reader["VatRate"]}");
                                 } while (reader.Read());
                             }
 
@@ -689,6 +700,7 @@ namespace ConsoleInventoryManagerV2
                 }
             }
         }
+
 
 
         public void AddInvoice(Invoice invoice)
@@ -858,6 +870,22 @@ namespace ConsoleInventoryManagerV2
                 }
             }
         }
+        public double GetProductNetPrice(int productId)
+        {
+            using (var connection = OpenConnection())
+            {
+                string query = "SELECT net_price FROM Product WHERE id = @productId;";
+
+                using (var command = new SQLiteCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@productId", productId);
+
+                    var result = command.ExecuteScalar();
+                    return result != null ? Convert.ToDouble(result) : 0;
+                }
+            }
+        }
+
 
         public void DeleteProductList(int id)
         {
@@ -872,7 +900,7 @@ namespace ConsoleInventoryManagerV2
                 }
             }
         }
-    
+
 
 
     }
