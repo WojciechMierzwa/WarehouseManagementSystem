@@ -5,6 +5,7 @@ using System.IO;
 using static System.Data.Entity.Infrastructure.Design.Executor;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
+
 namespace ConsoleInventoryManagerV2
 {
     internal class Controller
@@ -616,38 +617,113 @@ namespace ConsoleInventoryManagerV2
             }
         }
 
+        public InvoiceData GetInvoiceData(int orderId)
+        {
+            var invoiceData = new InvoiceData();
+
+            using (var connection = OpenConnection())
+            {
+                string sqlQuery = @"
+        SELECT 
+            o.id AS OrderID,
+            o.date AS InvoiceDate,
+            c.name AS CustomerName,
+            c.mail AS CustomerEmail,
+            c.phone_number AS CustomerPhone,
+            c.address_row1,
+            c.address_row2,
+            c.postal_code,
+            c.city,
+            c.country,
+            p.name AS ProductName,
+            pl.quantity AS ProductQuantity,
+            pl.unit_price AS UnitPrice,
+            pl.total_price AS TotalPrice,
+            p.vat AS VatRate
+        FROM 
+            [Order] o
+        JOIN 
+            Customer c ON o.Customer_id = c.id
+        JOIN 
+            Product_list pl ON o.id = pl.Order_id
+        JOIN 
+            Product p ON pl.Product_id = p.id
+        WHERE 
+            o.id = @Order_id;
+    ";
+
+                using (var command = new SQLiteCommand(sqlQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@Order_id", orderId);
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            // Fill basic invoice data
+                            invoiceData.InvoiceId = Convert.ToInt32(reader["OrderID"]);
+                            invoiceData.InvoiceDate = Convert.ToDateTime(reader["InvoiceDate"]);
+                            invoiceData.CustomerName = reader["CustomerName"].ToString();
+                            invoiceData.CustomerEmail = reader["CustomerEmail"].ToString();
+                            invoiceData.CustomerPhone = reader["CustomerPhone"].ToString();
+                            invoiceData.CustomerAddressRow1 = reader["address_row1"].ToString();
+                            invoiceData.CustomerAddressRow2 = reader["address_row2"].ToString();
+                            invoiceData.CustomerPostalCode = reader["postal_code"].ToString();
+                            invoiceData.CustomerCity = reader["city"].ToString();
+                            invoiceData.CustomerCountry = reader["country"].ToString();
+
+                            do
+                            {
+                                var product = new ProductData
+                                {
+                                    ProductName = reader["ProductName"].ToString(),
+                                    Quantity = Convert.ToInt32(reader["ProductQuantity"]),
+                                    UnitPrice = Convert.ToDecimal(reader["UnitPrice"]),
+                                    TotalPrice = Convert.ToDecimal(reader["TotalPrice"]),
+                                    VatRate = Convert.ToDecimal(reader["VatRate"])
+                                };
+                                invoiceData.Products.Add(product);
+                            } while (reader.Read());
+                        }
+                    }
+                }
+            }
+
+            return invoiceData;
+        }
+
         public void GenerateInvoiceDataFile(int orderId)
         {
             using (var connection = OpenConnection())
             {
                 // SQL query to retrieve order details and associated products, including customer address and VAT
                 string sqlQuery = @"
-    SELECT 
-        o.id AS OrderID,
-        c.name AS CustomerName,
-        c.mail AS CustomerEmail,
-        c.phone_number AS CustomerPhone,
-        c.address_row1,
-        c.address_row2,
-        c.postal_code,
-        c.city,
-        c.country,
-        p.name AS ProductName,
-        pl.quantity AS ProductQuantity,
-        pl.unit_price AS UnitPrice,
-        pl.total_price AS TotalPrice,
-        p.vat AS VatRate
-    FROM 
-        [Order] o
-    JOIN 
-        Customer c ON o.Customer_id = c.id
-    JOIN 
-        Product_list pl ON o.id = pl.Order_id
-    JOIN 
-        Product p ON pl.Product_id = p.id
-    WHERE 
-        o.id = @Order_id;
-";
+            SELECT 
+                o.id AS OrderID,
+                c.name AS CustomerName,
+                c.mail AS CustomerEmail,
+                c.phone_number AS CustomerPhone,
+                c.address_row1,
+                c.address_row2,
+                c.postal_code,
+                c.city,
+                c.country,
+                p.name AS ProductName,
+                pl.quantity AS ProductQuantity,
+                pl.unit_price AS UnitPrice,
+                pl.total_price AS TotalPrice,
+                p.vat AS VatRate
+            FROM 
+                [Order] o
+            JOIN 
+                Customer c ON o.Customer_id = c.id
+            JOIN 
+                Product_list pl ON o.id = pl.Order_id
+            JOIN 
+                Product p ON pl.Product_id = p.id
+            WHERE 
+                o.id = @Order_id;
+        ";
 
                 using (var command = new SQLiteCommand(sqlQuery, connection))
                 {
@@ -664,6 +740,7 @@ namespace ConsoleInventoryManagerV2
                             writer.WriteLine("Invoice Details");
                             writer.WriteLine("------------------------------------------------");
                             writer.WriteLine($"Order ID: {orderId}");
+                            writer.WriteLine($"Invoice Date: {DateTime.Now.ToString("yyyy-MM-dd")}"); // Today's date
                             writer.WriteLine();
 
                             // Write customer details
@@ -700,6 +777,7 @@ namespace ConsoleInventoryManagerV2
                 }
             }
         }
+
 
 
 

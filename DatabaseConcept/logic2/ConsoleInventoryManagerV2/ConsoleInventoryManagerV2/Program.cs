@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using QuestPDF;
+using QuestPDF.Infrastructure;
 
 namespace ConsoleInventoryManagerV2
 {
@@ -7,6 +9,7 @@ namespace ConsoleInventoryManagerV2
     {
         static void Main(string[] args)
         {
+            QuestPDF.Settings.License = LicenseType.Community;
             Controller controller = new Controller();
             bool exit = false;
 
@@ -249,6 +252,40 @@ namespace ConsoleInventoryManagerV2
             }
         }
 
+        private static void GenerateInvoicePdf(Controller controller)
+        {
+            Console.Write("Enter the Order ID to generate the invoice PDF: ");
+            string input = Console.ReadLine();
+
+            // Validate the input
+            if (int.TryParse(input, out int orderId))
+            {
+                try
+                {
+                    // Retrieve the invoice data from the controller
+                    var invoiceData = controller.GetInvoiceData(orderId);
+
+                    // Define the file path for the PDF
+                    string pdfFilePath = $"Invoice_{orderId}.pdf";
+
+                    // Generate the PDF using the invoice data
+                    InvoicePdfGenerator.GenerateInvoicePdf(invoiceData, pdfFilePath);
+
+                    Console.WriteLine($"Invoice PDF for Order ID {orderId} has been successfully generated at {pdfFilePath}.");
+                }
+                catch (Exception ex)
+                {
+                    // Handle potential exceptions (like PDF generation or file writing issues)
+                    Console.WriteLine($"An error occurred while generating the invoice PDF: {ex.Message}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Invalid input. Please enter a valid Order ID.");
+            }
+        }
+
+
         private static void ManageInvoices(Controller controller)
         {
             bool exit = false;
@@ -284,6 +321,8 @@ namespace ConsoleInventoryManagerV2
                     case "5":
                         GenerateInvoice(controller);
                         GenerateInvoiceData(controller);
+                        GenerateInvoicePdf(controller);
+
                         break;
                     case "0":
                         exit = true;
