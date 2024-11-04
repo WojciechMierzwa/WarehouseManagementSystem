@@ -371,5 +371,284 @@ namespace ConsoleInventoryManagerV2
             }
         }
 
+        public void AddProduct(Product product)
+        {
+            using (var connection = OpenConnection())
+            {
+                string insertQuery = @"
+                    INSERT INTO Product (name, sku, category, net_price, vat, stock, Vendor_id) 
+                    VALUES (@name, @sku, @category, @netPrice, @vat, @stock, @vendorId);
+                ";
+
+                using (var command = new SQLiteCommand(insertQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@name", product.Name);
+                    command.Parameters.AddWithValue("@sku", product.Sku);
+                    command.Parameters.AddWithValue("@category", product.Category);
+                    command.Parameters.AddWithValue("@netPrice", product.NetPrice);
+                    command.Parameters.AddWithValue("@vat", product.Vat);
+                    command.Parameters.AddWithValue("@stock", product.Stock);
+                    command.Parameters.AddWithValue("@vendorId", product.VendorId);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public List<Product> GetAllProducts()
+        {
+            var products = new List<Product>();
+
+            using (var connection = OpenConnection())
+            {
+                string query = "SELECT * FROM Product;";
+
+                using (var command = new SQLiteCommand(query, connection))
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var product = new Product(
+                            id: Convert.ToInt32(reader["id"]),
+                            name: reader["name"].ToString(),
+                            sku: Convert.ToInt32(reader["sku"]),
+                            category: reader["category"].ToString(),
+                            netPrice: Convert.ToDouble(reader["net_price"]),
+                            vat: Convert.ToDouble(reader["vat"]),
+                            stock: Convert.ToInt32(reader["stock"]),
+                            vendorId: Convert.ToInt32(reader["Vendor_id"])
+                        );
+
+                        products.Add(product);
+                    }
+                }
+            }
+            return products;
+        }
+
+        public void UpdateProduct(Product product)
+        {
+            using (var connection = OpenConnection())
+            {
+                string updateQuery = @"
+                    UPDATE Product 
+                    SET name = @name,
+                        sku = @sku,
+                        category = @category,
+                        net_price = @netPrice,
+                        vat = @vat,
+                        stock = @stock,
+                        Vendor_id = @vendorId
+                    WHERE id = @id;
+                ";
+
+                using (var command = new SQLiteCommand(updateQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@id", product.Id);
+                    command.Parameters.AddWithValue("@name", product.Name);
+                    command.Parameters.AddWithValue("@sku", product.Sku);
+                    command.Parameters.AddWithValue("@category", product.Category);
+                    command.Parameters.AddWithValue("@netPrice", product.NetPrice);
+                    command.Parameters.AddWithValue("@vat", product.Vat);
+                    command.Parameters.AddWithValue("@stock", product.Stock);
+                    command.Parameters.AddWithValue("@vendorId", product.VendorId);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public void DeleteProduct(int id)
+        {
+            using (var connection = OpenConnection())
+            {
+                string deleteQuery = "DELETE FROM Product WHERE id = @id;";
+
+                using (var command = new SQLiteCommand(deleteQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@id", id);
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+        public void AddOrder(Order order)
+        {
+            using (var connection = OpenConnection())
+            {
+                string insertQuery = @"
+                    INSERT INTO 'Order' (status, date, Customer_id, Employee_id) 
+                    VALUES (@status, @date, @customerId, @employeeId);
+                ";
+
+                using (var command = new SQLiteCommand(insertQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@status", order.Status);
+                    command.Parameters.AddWithValue("@date", order.Date);
+                    command.Parameters.AddWithValue("@customerId", order.CustomerId);
+                    command.Parameters.AddWithValue("@employeeId", order.EmployeeId);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public List<Order> GetAllOrders()
+        {
+            var orders = new List<Order>();
+
+            using (var connection = OpenConnection())
+            {
+                string query = "SELECT * FROM 'Order';";
+
+                using (var command = new SQLiteCommand(query, connection))
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var order = new Order(
+                            id: Convert.ToInt32(reader["id"]),
+                            status: Convert.ToInt32(reader["status"]),
+                            date: Convert.ToDateTime(reader["date"]),
+                            customerId: Convert.ToInt32(reader["Customer_id"]),
+                            employeeId: Convert.ToInt32(reader["Employee_id"])
+                        );
+
+                        orders.Add(order);
+                    }
+                }
+            }
+            return orders;
+        }
+
+        public void UpdateOrder(Order order)
+        {
+            using (var connection = OpenConnection())
+            {
+                string updateQuery = @"
+                    UPDATE 'Order' 
+                    SET status = @status,
+                        date = @date,
+                        Customer_id = @customerId,
+                        Employee_id = @employeeId
+                    WHERE id = @id;
+                ";
+
+                using (var command = new SQLiteCommand(updateQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@id", order.Id);
+                    command.Parameters.AddWithValue("@status", order.Status);
+                    command.Parameters.AddWithValue("@date", order.Date);
+                    command.Parameters.AddWithValue("@customerId", order.CustomerId);
+                    command.Parameters.AddWithValue("@employeeId", order.EmployeeId);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public void DeleteOrder(int id)
+        {
+            using (var connection = OpenConnection())
+            {
+                string deleteQuery = "DELETE FROM 'Order' WHERE id = @id;";
+
+                using (var command = new SQLiteCommand(deleteQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@id", id);
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        //invoice
+        public void AddInvoice(Invoice invoice)
+        {
+            using (var connection = OpenConnection())
+            {
+                string insertQuery = @"
+                    INSERT INTO Invoice (status, invoice_date, total_amount, Order_id) 
+                    VALUES (@status, @invoiceDate, @totalAmount, @orderId);
+                ";
+
+                using (var command = new SQLiteCommand(insertQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@status", invoice.Status);
+                    command.Parameters.AddWithValue("@invoiceDate", invoice.InvoiceDate);
+                    command.Parameters.AddWithValue("@totalAmount", invoice.TotalAmount);
+                    command.Parameters.AddWithValue("@orderId", invoice.OrderId);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public List<Invoice> GetAllInvoices()
+        {
+            var invoices = new List<Invoice>();
+
+            using (var connection = OpenConnection())
+            {
+                string query = "SELECT * FROM Invoice;";
+
+                using (var command = new SQLiteCommand(query, connection))
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var invoice = new Invoice(
+                            id: Convert.ToInt32(reader["id"]),
+                            status: Convert.ToInt32(reader["status"]),
+                            invoiceDate: Convert.ToDateTime(reader["invoice_date"]),
+                            totalAmount: Convert.ToDouble(reader["total_amount"]),
+                            orderId: Convert.ToInt32(reader["Order_id"])
+                        );
+
+                        invoices.Add(invoice);
+                    }
+                }
+            }
+            return invoices;
+        }
+
+        public void UpdateInvoice(Invoice invoice)
+        {
+            using (var connection = OpenConnection())
+            {
+                string updateQuery = @"
+                    UPDATE Invoice 
+                    SET status = @status,
+                        invoice_date = @invoiceDate,
+                        total_amount = @totalAmount,
+                        Order_id = @orderId
+                    WHERE id = @id;
+                ";
+
+                using (var command = new SQLiteCommand(updateQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@id", invoice.Id);
+                    command.Parameters.AddWithValue("@status", invoice.Status);
+                    command.Parameters.AddWithValue("@invoiceDate", invoice.InvoiceDate);
+                    command.Parameters.AddWithValue("@totalAmount", invoice.TotalAmount);
+                    command.Parameters.AddWithValue("@orderId", invoice.OrderId);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public void DeleteInvoice(int id)
+        {
+            using (var connection = OpenConnection())
+            {
+                string deleteQuery = "DELETE FROM Invoice WHERE id = @id;";
+
+                using (var command = new SQLiteCommand(deleteQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@id", id);
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
     }
 }
