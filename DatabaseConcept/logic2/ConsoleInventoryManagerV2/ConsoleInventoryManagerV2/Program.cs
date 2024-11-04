@@ -998,7 +998,10 @@ namespace ConsoleInventoryManagerV2
             Console.WriteLine("\nList of Customers:");
             foreach (var customer in customers)
             {
-                Console.WriteLine($"ID: {customer.Id}, Name: {customer.Name}, Phone: {customer.PhoneNumber}, Mail: {customer.Mail}");
+                Console.WriteLine($"ID: {customer.Id}, Name: {customer.Name}, Phone: {customer.PhoneNumber}, Mail: {customer.Mail}, " +
+                  $"NIP: {customer.Nip}, Country: {customer.Country}, City: {customer.City}, " +
+                  $"Postal Code: {customer.PostalCode}, Address 1: {customer.AddressRow1}, Address 2: {customer.AddressRow2}");
+
             }
         }
     }
