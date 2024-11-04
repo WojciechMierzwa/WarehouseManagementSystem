@@ -629,6 +629,7 @@ namespace ConsoleInventoryManagerV2
             o.date AS InvoiceDate,
             c.name AS CustomerName,
             c.mail AS CustomerEmail,
+            c.nip AS CustomerNip,
             c.phone_number AS CustomerPhone,
             c.address_row1,
             c.address_row2,
@@ -664,6 +665,7 @@ namespace ConsoleInventoryManagerV2
                             invoiceData.InvoiceId = Convert.ToInt32(reader["OrderID"]);
                             invoiceData.InvoiceDate = Convert.ToDateTime(reader["InvoiceDate"]);
                             invoiceData.CustomerName = reader["CustomerName"].ToString();
+                            invoiceData.CustomerNip = reader["CustomerNip"].ToString();
                             invoiceData.CustomerEmail = reader["CustomerEmail"].ToString();
                             invoiceData.CustomerPhone = reader["CustomerPhone"].ToString();
                             invoiceData.CustomerAddressRow1 = reader["address_row1"].ToString();

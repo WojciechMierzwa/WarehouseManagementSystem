@@ -15,6 +15,8 @@ namespace ConsoleInventoryManagerV2
         public string CustomerPostalCode { get; set; }
         public string CustomerCity { get; set; }
         public string CustomerCountry { get; set; }
+
+        public string CustomerNip { get; set; }
         public List<ProductData> Products { get; set; } = new List<ProductData>();
         public decimal TotalAmount => CalculateTotalAmount();
 
@@ -23,7 +25,7 @@ namespace ConsoleInventoryManagerV2
             decimal total = 0;
             foreach (var product in Products)
             {
-                total += product.TotalPrice;
+                total += product.TotalPrice + product.TotalPrice * product.VatRate/100;
             }
             return total;
         }
