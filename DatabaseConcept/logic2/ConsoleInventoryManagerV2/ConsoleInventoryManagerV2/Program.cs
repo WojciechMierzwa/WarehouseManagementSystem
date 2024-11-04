@@ -186,6 +186,57 @@ namespace ConsoleInventoryManagerV2
                 Console.WriteLine($"ID: {productList.Id}, Product ID: {productList.ProductId}, Order ID: {productList.OrderId}, Quantity: {productList.Quantity}, Unit Price: {productList.UnitPrice}, Total Price: {productList.TotalPrice}");
             }
         }
+        private static void GenerateInvoice(Controller controller)
+        {
+            Console.Write("Enter the Order ID to generate the invoice: ");
+            string input = Console.ReadLine();
+
+            // Validate the input
+            if (int.TryParse(input, out int orderId))
+            {
+                try
+                {
+                    // Call the method in the controller to create the invoice
+                    controller.CreateInvoice(orderId);
+                    Console.WriteLine($"Invoice for Order ID {orderId} has been successfully generated.");
+                }
+                catch (Exception ex)
+                {
+                    // Handle potential exceptions (like database issues)
+                    Console.WriteLine($"An error occurred while generating the invoice: {ex.Message}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Invalid input. Please enter a valid Order ID.");
+            }
+        }
+        private static void GenerateInvoiceData(Controller controller)
+        {
+            Console.Write("Enter the Order ID to generate the invoice data file: ");
+            string input = Console.ReadLine();
+
+            // Validate the input
+            if (int.TryParse(input, out int orderId))
+            {
+                try
+                {
+                    // Call the method in the controller to generate the invoice data file
+                    controller.GenerateInvoiceDataFile(orderId);
+                    Console.WriteLine($"Invoice data for Order ID {orderId} has been successfully generated.");
+                }
+                catch (Exception ex)
+                {
+                    // Handle potential exceptions (like file writing issues or database issues)
+                    Console.WriteLine($"An error occurred while generating the invoice data: {ex.Message}");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Invalid input. Please enter a valid Order ID.");
+            }
+        }
+
         private static void ManageInvoices(Controller controller)
         {
             bool exit = false;
@@ -198,6 +249,7 @@ namespace ConsoleInventoryManagerV2
                 Console.WriteLine("2. Edit Invoice");
                 Console.WriteLine("3. Delete Invoice");
                 Console.WriteLine("4. Show All Invoices");
+                Console.WriteLine("5. Generate Invoice by ID");
                 Console.WriteLine("0. Back to Main Menu");
                 Console.Write("Choose an option: ");
 
@@ -216,6 +268,10 @@ namespace ConsoleInventoryManagerV2
                         break;
                     case "4":
                         ShowAllInvoices(controller);
+                        break;
+                    case "5":
+                        GenerateInvoice(controller);
+                        GenerateInvoiceData(controller);
                         break;
                     case "0":
                         exit = true;

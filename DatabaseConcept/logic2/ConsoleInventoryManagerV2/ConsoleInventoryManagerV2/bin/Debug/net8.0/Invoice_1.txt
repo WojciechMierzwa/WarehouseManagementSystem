@@ -1,0 +1,14 @@
+Invoice Details
+------------------------------------------------
+Order ID: 1
+
+Customer Name: cus
+Email: 1
+Phone: 1
+
+Products:
+------------------------------------------------
+Product Name	Quantity	Unit Price	Total Price
+gwozdzie	12	1	13
+------------------------------------------------
+End of Invoice

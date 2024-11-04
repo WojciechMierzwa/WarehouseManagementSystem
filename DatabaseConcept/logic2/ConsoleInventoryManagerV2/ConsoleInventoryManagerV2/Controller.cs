@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Data.SQLite;
 using System.IO;
+using static System.Data.Entity.Infrastructure.Design.Executor;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ConsoleInventoryManagerV2
 {
@@ -561,6 +563,134 @@ namespace ConsoleInventoryManagerV2
         }
 
         //invoice
+
+        public void CreateInvoice(int orderId)
+        {
+            using (var connection = OpenConnection())
+            {
+                // SQL script to create an invoice and update product stock
+                string sqlQuery = @"
+            -- 1. Calculate the total amount for the invoice
+            WITH order_total AS (
+                SELECT 
+                    SUM(pl.total_price) AS total_amount
+                FROM 
+                    Product_list pl
+                WHERE 
+                    pl.Order_id = @Order_id
+            )
+
+            -- 2. Insert a new invoice record using the calculated total amount
+            INSERT INTO Invoice (status, invoice_date, total_amount, Order_id)
+            SELECT 
+                1,                    -- Invoice status (e.g., 1 for 'issued')
+                CURRENT_TIMESTAMP,    -- Invoice date
+                total_amount,         -- Total amount calculated
+                @Order_id             -- Order ID
+            FROM 
+                order_total;
+
+            -- 3. Update product stock for each product in the order
+            UPDATE Product
+            SET stock = stock - (
+                    SELECT quantity 
+                    FROM Product_list 
+                    WHERE Product_list.Product_id = Product.id
+                      AND Product_list.Order_id = @Order_id
+                )
+            WHERE id IN (
+                    SELECT Product_id 
+                    FROM Product_list 
+                    WHERE Order_id = @Order_id
+                );
+        ";
+
+                using (var command = new SQLiteCommand(sqlQuery, connection))
+                {
+                    // Add the parameter for the Order ID
+                    command.Parameters.AddWithValue("@Order_id", orderId);
+
+                    // Execute the command
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public void GenerateInvoiceDataFile(int orderId)
+        {
+            using (var connection = OpenConnection())
+            {
+                // SQL query to retrieve order details and associated products
+                string sqlQuery = @"
+            SELECT 
+                o.id AS OrderID,
+                c.name AS CustomerName,
+                c.mail AS CustomerEmail,
+                c.phone_number AS CustomerPhone,
+                p.name AS ProductName,
+                pl.quantity AS ProductQuantity,
+                pl.unit_price AS UnitPrice,
+                pl.total_price AS TotalPrice
+            FROM 
+                [Order] o
+            JOIN 
+                Customer c ON o.Customer_id = c.id
+            JOIN 
+                Product_list pl ON o.id = pl.Order_id
+            JOIN 
+                Product p ON pl.Product_id = p.id
+            WHERE 
+                o.id = @Order_id;
+        ";
+
+                using (var command = new SQLiteCommand(sqlQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@Order_id", orderId);
+
+                    using (var reader = command.ExecuteReader())
+                    {
+                        // Prepare the file path
+                        string filePath = $"Invoice_{orderId}.txt";
+
+                        using (var writer = new StreamWriter(filePath))
+                        {
+                            // Write header
+                            writer.WriteLine("Invoice Details");
+                            writer.WriteLine("------------------------------------------------");
+                            writer.WriteLine($"Order ID: {orderId}");
+                            writer.WriteLine();
+
+                            // Write customer details
+                            if (reader.Read())
+                            {
+                                writer.WriteLine($"Customer Name: {reader["CustomerName"]}");
+                                writer.WriteLine($"Email: {reader["CustomerEmail"]}");
+                                writer.WriteLine($"Phone: {reader["CustomerPhone"]}");
+                                writer.WriteLine();
+
+                                // Write table header for products
+                                writer.WriteLine("Products:");
+                                writer.WriteLine("------------------------------------------------");
+                                writer.WriteLine("Product Name\tQuantity\tUnit Price\tTotal Price");
+
+                                // Write product details
+                                do
+                                {
+                                    writer.WriteLine($"{reader["ProductName"]}\t{reader["ProductQuantity"]}\t{reader["UnitPrice"]}\t{reader["TotalPrice"]}");
+                                } while (reader.Read());
+                            }
+
+                            writer.WriteLine("------------------------------------------------");
+                            writer.WriteLine("End of Invoice");
+                        }
+
+                        Console.WriteLine($"Invoice data has been written to {filePath}");
+                    }
+                }
+            }
+        }
+
+
         public void AddInvoice(Invoice invoice)
         {
             using (var connection = OpenConnection())
