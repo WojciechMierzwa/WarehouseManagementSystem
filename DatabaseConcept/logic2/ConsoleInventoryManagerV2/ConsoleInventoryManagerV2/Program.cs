@@ -20,6 +20,7 @@ namespace ConsoleInventoryManagerV2
                 Console.WriteLine("4. Product Management");
                 Console.WriteLine("5. Order Management");
                 Console.WriteLine("6. Invoice Management");
+                Console.WriteLine("7. Product List Management");
                 Console.WriteLine("0. Exit");
                 Console.Write("Choose an option: ");
 
@@ -45,6 +46,9 @@ namespace ConsoleInventoryManagerV2
                     case "6":
                         ManageInvoices(controller);
                         break;
+                    case "7":
+                        ManageProductLists(controller);
+                        break;
                     case "0":
                         exit = true;
                         break;
@@ -61,6 +65,127 @@ namespace ConsoleInventoryManagerV2
             }
         }
 
+        private static void ManageProductLists(Controller controller)
+        {
+            bool exit = false;
+
+            while (!exit)
+            {
+                Console.Clear();
+                Console.WriteLine("Product List Management System");
+                Console.WriteLine("1. Add Product List");
+                Console.WriteLine("2. Edit Product List");
+                Console.WriteLine("3. Delete Product List");
+                Console.WriteLine("4. Show All Product Lists");
+                Console.WriteLine("0. Back to Main Menu");
+                Console.Write("Choose an option: ");
+
+                string choice = Console.ReadLine();
+
+                switch (choice)
+                {
+                    case "1":
+                        AddProductList(controller);
+                        break;
+                    case "2":
+                        EditProductList(controller);
+                        break;
+                    case "3":
+                        DeleteProductList(controller);
+                        break;
+                    case "4":
+                        ShowAllProductLists(controller);
+                        break;
+                    case "0":
+                        exit = true;
+                        break;
+                    default:
+                        Console.WriteLine("Invalid choice. Please try again.");
+                        break;
+                }
+
+                if (!exit)
+                {
+                    Console.WriteLine("Press Enter to continue...");
+                    Console.ReadLine();
+                }
+            }
+        }
+
+        private static void AddProductList(Controller controller)
+        {
+            Console.Write("Enter Product ID: ");
+            int productId = int.Parse(Console.ReadLine());
+            Console.Write("Enter Order ID: ");
+            int orderId = int.Parse(Console.ReadLine());
+            Console.Write("Enter Quantity: ");
+            int quantity = int.Parse(Console.ReadLine());
+            Console.Write("Enter Unit Price: ");
+            double unitPrice = double.Parse(Console.ReadLine());
+            Console.Write("Enter Total Price: ");
+            double totalPrice = double.Parse(Console.ReadLine());
+
+            ProductList productList = new ProductList(0, productId, orderId, quantity, unitPrice, totalPrice);
+            controller.AddProductList(productList);
+            Console.WriteLine($"\nProduct List entry added successfully!");
+        }
+
+        private static void EditProductList(Controller controller)
+        {
+            Console.Write("Enter Product List ID to edit: ");
+            int id = int.Parse(Console.ReadLine());
+
+            var productLists = controller.GetAllProductLists();
+            var productListToEdit = productLists.Find(p => p.Id == id);
+
+            if (productListToEdit != null)
+            {
+                Console.Write("Enter new Product ID (leave blank to keep current): ");
+                string productIdInput = Console.ReadLine();
+                if (int.TryParse(productIdInput, out int productId)) productListToEdit.ProductId = productId;
+
+                Console.Write("Enter new Order ID (leave blank to keep current): ");
+                string orderIdInput = Console.ReadLine();
+                if (int.TryParse(orderIdInput, out int orderId)) productListToEdit.OrderId = orderId;
+
+                Console.Write("Enter new Quantity (leave blank to keep current): ");
+                string quantityInput = Console.ReadLine();
+                if (int.TryParse(quantityInput, out int quantity)) productListToEdit.Quantity = quantity;
+
+                Console.Write("Enter new Unit Price (leave blank to keep current): ");
+                string unitPriceInput = Console.ReadLine();
+                if (double.TryParse(unitPriceInput, out double unitPrice)) productListToEdit.UnitPrice = unitPrice;
+
+                Console.Write("Enter new Total Price (leave blank to keep current): ");
+                string totalPriceInput = Console.ReadLine();
+                if (double.TryParse(totalPriceInput, out double totalPrice)) productListToEdit.TotalPrice = totalPrice;
+
+                controller.UpdateProductList(productListToEdit);
+                Console.WriteLine($"\nProduct List entry updated successfully!");
+            }
+            else
+            {
+                Console.WriteLine("\nProduct List entry not found.");
+            }
+        }
+
+        private static void DeleteProductList(Controller controller)
+        {
+            Console.Write("Enter Product List ID to delete: ");
+            int id = int.Parse(Console.ReadLine());
+            controller.DeleteProductList(id);
+            Console.WriteLine($"\nProduct List entry with ID {id} deleted successfully!");
+        }
+
+        private static void ShowAllProductLists(Controller controller)
+        {
+            var productLists = controller.GetAllProductLists();
+            Console.WriteLine("\nList of Product Lists:");
+            foreach (var productList in productLists)
+            {
+                Console.WriteLine($"ID: {productList.Id}, Product ID: {productList.ProductId}, Order ID: {productList.OrderId}, Quantity: {productList.Quantity}, Unit Price: {productList.UnitPrice}, Total Price: {productList.TotalPrice}");
+            }
+        }
         private static void ManageInvoices(Controller controller)
         {
             bool exit = false;

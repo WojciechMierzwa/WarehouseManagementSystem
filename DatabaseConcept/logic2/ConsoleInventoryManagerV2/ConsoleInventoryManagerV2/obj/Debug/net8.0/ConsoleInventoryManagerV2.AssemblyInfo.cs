@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConsoleInventoryManagerV2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+acbdf9410a1f9ec4e02e06624f5e67efc18201cc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+19ed23dcdf1de4f8aba4db8c5915e7003b1b86ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConsoleInventoryManagerV2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConsoleInventoryManagerV2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

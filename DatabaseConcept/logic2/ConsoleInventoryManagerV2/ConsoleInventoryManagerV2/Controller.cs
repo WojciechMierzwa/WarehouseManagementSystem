@@ -650,5 +650,100 @@ namespace ConsoleInventoryManagerV2
             }
         }
 
+        public void AddProductList(ProductList productList)
+        {
+            using (var connection = OpenConnection())
+            {
+                string insertQuery = @"
+                    INSERT INTO Product_list (Product_id, Order_id, quantity, unit_price, total_price) 
+                    VALUES (@productId, @orderId, @quantity, @unitPrice, @totalPrice);
+                ";
+
+                using (var command = new SQLiteCommand(insertQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@productId", productList.ProductId);
+                    command.Parameters.AddWithValue("@orderId", productList.OrderId);
+                    command.Parameters.AddWithValue("@quantity", productList.Quantity);
+                    command.Parameters.AddWithValue("@unitPrice", productList.UnitPrice);
+                    command.Parameters.AddWithValue("@totalPrice", productList.TotalPrice);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public List<ProductList> GetAllProductLists()
+        {
+            var productLists = new List<ProductList>();
+
+            using (var connection = OpenConnection())
+            {
+                string query = "SELECT * FROM Product_list;";
+
+                using (var command = new SQLiteCommand(query, connection))
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var productList = new ProductList(
+                            id: Convert.ToInt32(reader["id"]),
+                            productId: Convert.ToInt32(reader["Product_id"]),
+                            orderId: Convert.ToInt32(reader["Order_id"]),
+                            quantity: Convert.ToInt32(reader["quantity"]),
+                            unitPrice: Convert.ToDouble(reader["unit_price"]),
+                            totalPrice: Convert.ToDouble(reader["total_price"])
+                        );
+
+                        productLists.Add(productList);
+                    }
+                }
+            }
+            return productLists;
+        }
+
+        public void UpdateProductList(ProductList productList)
+        {
+            using (var connection = OpenConnection())
+            {
+                string updateQuery = @"
+                    UPDATE Product_list 
+                    SET Product_id = @productId,
+                        Order_id = @orderId,
+                        quantity = @quantity,
+                        unit_price = @unitPrice,
+                        total_price = @totalPrice
+                    WHERE id = @id;
+                ";
+
+                using (var command = new SQLiteCommand(updateQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@id", productList.Id);
+                    command.Parameters.AddWithValue("@productId", productList.ProductId);
+                    command.Parameters.AddWithValue("@orderId", productList.OrderId);
+                    command.Parameters.AddWithValue("@quantity", productList.Quantity);
+                    command.Parameters.AddWithValue("@unitPrice", productList.UnitPrice);
+                    command.Parameters.AddWithValue("@totalPrice", productList.TotalPrice);
+
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+        public void DeleteProductList(int id)
+        {
+            using (var connection = OpenConnection())
+            {
+                string deleteQuery = "DELETE FROM Product_list WHERE id = @id;";
+
+                using (var command = new SQLiteCommand(deleteQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@id", id);
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+    
+
+
     }
 }
