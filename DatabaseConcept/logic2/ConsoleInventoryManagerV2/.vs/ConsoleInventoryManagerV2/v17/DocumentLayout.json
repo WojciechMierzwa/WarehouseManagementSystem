@@ -44,7 +44,7 @@
               "RelativeDocumentMoniker": "ConsoleInventoryManagerV2\\Program.cs",
               "ToolTip": "E:\\Semestr5\\ProjektZaliczeniowy.NET\\ProjektZaliczeniowy-.NET\\DatabaseConcept\\logic2\\ConsoleInventoryManagerV2\\ConsoleInventoryManagerV2\\Program.cs",
               "RelativeToolTip": "ConsoleInventoryManagerV2\\Program.cs",
-              "ViewState": "AgIAAFMBAAAAAAAAAAAQwFsBAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-03T21:25:31.147Z",
               "EditorCaption": ""
@@ -59,8 +59,7 @@
               "RelativeToolTip": "ConsoleInventoryManagerV2\\InvoicePdfGenerator.cs",
               "ViewState": "AgIAAHQAAAAAAAAAAAAtwIQAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T16:49:49.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T16:49:49.151Z"
             },
             {
               "$type": "Document",
@@ -72,8 +71,7 @@
               "RelativeToolTip": "ConsoleInventoryManagerV2\\InvoiceData.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T16:46:45.759Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T16:46:45.759Z"
             },
             {
               "$type": "Document",
@@ -85,8 +83,7 @@
               "RelativeToolTip": "ConsoleInventoryManagerV2\\Vendor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T00:15:50.291Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T00:15:50.291Z"
             },
             {
               "$type": "Document",
@@ -98,8 +95,7 @@
               "RelativeToolTip": "ConsoleInventoryManagerV2\\Customer.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAA1wCMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T00:09:38.315Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-04T00:09:38.315Z"
             },
             {
               "$type": "Document",
@@ -111,8 +107,7 @@
               "RelativeToolTip": "ConsoleInventoryManagerV2\\Controller.cs",
               "ViewState": "AgIAAIYCAAAAAAAAAAAowJsCAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T21:31:01.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-03T21:31:01.408Z"
             }
           ]
         }
