@@ -36,6 +36,8 @@ The database contains the following tables:
 4. **Invoice**: Tracks orders and links customers to purchases.  
 5. **Product_list**: Connects products to invoices.  
 
+![Database Schema](db_image.png)
+
 **Relationships**:  
 - `Invoice` links to `Customer` via a foreign key.  
 - `Product_list` links to both `Product` and `Invoice`.  
