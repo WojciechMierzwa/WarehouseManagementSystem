@@ -1,0 +1,266 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\windowsformsapp1\\createinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|solutionrelative:windowsformsapp1\\createinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|d:\\ans\\semestr5\\c#\\v3\\inventorymanager\\windowsformsapp1\\createinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|solutionrelative:windowsformsapp1\\createinvoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|d:\\ans\\semestr5\\c#\\v3\\inventorymanager\\windowsformsapp1\\recordmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|solutionrelative:windowsformsapp1\\recordmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|d:\\ans\\semestr5\\c#\\v3\\inventorymanager\\windowsformsapp1\\recordmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|solutionrelative:windowsformsapp1\\recordmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\windowsformsapp1\\companyinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|solutionrelative:windowsformsapp1\\companyinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|d:\\ans\\semestr5\\c#\\v3\\inventorymanager\\windowsformsapp1\\createeditcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|solutionrelative:windowsformsapp1\\createeditcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|d:\\ans\\semestr5\\c#\\v3\\inventorymanager\\windowsformsapp1\\createeditemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|solutionrelative:windowsformsapp1\\createeditemployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|d:\\ans\\semestr5\\c#\\v3\\inventorymanager\\windowsformsapp1\\createeditproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|solutionrelative:windowsformsapp1\\createeditproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\windowsformsapp1\\databaseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|solutionrelative:windowsformsapp1\\databaseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|d:\\ans\\semestr5\\c#\\v3\\inventorymanager\\windowsformsapp1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|solutionrelative:windowsformsapp1\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|d:\\ans\\semestr5\\c#\\v3\\inventorymanager\\windowsformsapp1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|solutionrelative:windowsformsapp1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|d:\\ans\\semestr5\\c#\\v3\\inventorymanager\\windowsformsapp1\\menuadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|solutionrelative:windowsformsapp1\\menuadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\windowsformsapp1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|solutionrelative:windowsformsapp1\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\windowsformsapp1\\companyinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|solutionrelative:windowsformsapp1\\companyinfoform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\windowsformsapp1\\databaseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A22FA8D7-A625-4866-ACF3-47BB9FD1CED4}|WindowsFormsApp1\\InventoryManager.csproj|solutionrelative:windowsformsapp1\\databaseform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateInvoice.cs",
+              "DocumentMoniker": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\CreateInvoice.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\CreateInvoice.cs",
+              "ToolTip": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\CreateInvoice.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\CreateInvoice.cs",
+              "ViewState": "AgIAANsBAAAAAAAAAIAwwO8BAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T06:15:47.123Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RecordManager.cs",
+              "DocumentMoniker": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\RecordManager.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\RecordManager.cs",
+              "ToolTip": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\RecordManager.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\RecordManager.cs",
+              "ViewState": "AgIAAKACAAAAAAAAAAD4v6cCAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T19:15:48.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CompanyInfoForm.cs [Design]",
+              "DocumentMoniker": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\CompanyInfoForm.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\CompanyInfoForm.cs",
+              "ToolTip": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\CompanyInfoForm.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\CompanyInfoForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T18:23:28.006Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RecordManager.cs [Design]",
+              "DocumentMoniker": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\RecordManager.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\RecordManager.cs",
+              "ToolTip": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\RecordManager.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\RecordManager.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T19:15:28.433Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateInvoice.cs [Design]",
+              "DocumentMoniker": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\CreateInvoice.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\CreateInvoice.cs",
+              "ToolTip": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\CreateInvoice.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\CreateInvoice.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T19:15:34.249Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateEditEmployee.cs [Design]",
+              "DocumentMoniker": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\CreateEditEmployee.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\CreateEditEmployee.cs",
+              "ToolTip": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\CreateEditEmployee.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\CreateEditEmployee.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T19:15:35.638Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateEditCustomer.cs [Design]",
+              "DocumentMoniker": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\CreateEditCustomer.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\CreateEditCustomer.cs",
+              "ToolTip": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\CreateEditCustomer.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\CreateEditCustomer.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T19:15:36.239Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CreateEditProduct.cs [Design]",
+              "DocumentMoniker": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\CreateEditProduct.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\CreateEditProduct.cs",
+              "ToolTip": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\CreateEditProduct.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\CreateEditProduct.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T19:15:34.895Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Menu.cs [Design]",
+              "DocumentMoniker": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\Menu.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Menu.cs",
+              "ToolTip": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\Menu.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\Menu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T19:15:32.756Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MenuAdmin.cs [Design]",
+              "DocumentMoniker": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\MenuAdmin.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\MenuAdmin.cs",
+              "ToolTip": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\MenuAdmin.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\MenuAdmin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T19:15:30.584Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DatabaseForm.cs [Design]",
+              "DocumentMoniker": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\DatabaseForm.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\DatabaseForm.cs",
+              "ToolTip": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\DatabaseForm.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\DatabaseForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T15:41:20.955Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\LoginForm.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\LoginForm.cs",
+              "ToolTip": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\LoginForm.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\LoginForm.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAApwEkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T15:38:23.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\LoginForm.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\LoginForm.cs",
+              "ToolTip": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\LoginForm.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp1\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T15:31:39.637Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DatabaseForm.cs",
+              "DocumentMoniker": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\DatabaseForm.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\DatabaseForm.cs",
+              "ToolTip": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\DatabaseForm.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\DatabaseForm.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA/wBUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T15:47:09.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CompanyInfoForm.cs",
+              "DocumentMoniker": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\CompanyInfoForm.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\CompanyInfoForm.cs",
+              "ToolTip": "D:\\ANS\\Semestr5\\C#\\v3\\InventoryManager\\WindowsFormsApp1\\CompanyInfoForm.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\CompanyInfoForm.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAkwEoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T18:27:17.615Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
